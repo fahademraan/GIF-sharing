@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Document</title>
+
+    <style>
+        .border-r {
+            background-color: #161617;
+            border-radius: 15px;
+        }
+
+        .fs-20 {
+            font-size: 20px;
+        }
+
+        .text-dark-pink {
+            color: #E5194D;
+        }
+
+        .black-shaded {
+            background-color: #080808;
+        }
+
+        .pink-btn {
+            padding: 5px 15px 5px 15px;
+            background-color: #E5194D;
+            color: white;
+            border-radius: 15px;
+            border: none;
+        }
+
+        .follow-after::after {
+            content: '';
+            position: absolute;
+            width: 56px;
+            height: 3px;
+            border-radius: 3px;
+            background-color: #E5194D;
+            top: 32px;
+            left: 1%;
+        }
+
+        .h-adj {
+            height: 700px;
+        }
+
+        .center-space {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .heart-after::after {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 4px;
+            top: 23px;
+            left: 1%;
+            background-color: #E5194D;
+            border-radius: 3px;
+        }
+
+        .link-after::after {
+            content: '';
+            position: absolute;
+            width: 35px;
+            height: 4px;
+            top: 23px;
+            left: 1%;
+            background-color: #E5194D;
+            border-radius: 3px;
+        }
+
+        .reddit-after::after {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 4px;
+            top: 23px;
+            left: 1%;
+            background-color: #E5194D;
+            border-radius: 3px;
+        }
+
+        .twitter-after::after {
+            content: '';
+            position: absolute;
+            width: 32px;
+            height: 4px;
+            top: 23px;
+            left: 1%;
+            background-color: #E5194D;
+            border-radius: 3px;
+        }
+
+        .discord-after::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 4px;
+            top: 23px;
+            left: 1%;
+            background-color: #E5194D;
+            border-radius: 3px;
+        }
+
+        .code-after::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 4px;
+            top: 23px;
+            left: 1%;
+            background-color: #E5194D;
+            border-radius: 3px;
+        }
+
+        .flag-after::after {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 4px;
+            top: 23px;
+            left: 1%;
+            background-color: #E5194D;
+            border-radius: 3px;
+        }
+
+        .cross-adj {
+            top: 68px;
+            left: 91%;
+        }
+
+        @media(max-width: 900px) {
+
+            .heart-after::after,
+            .link-after::after,
+            .reddit-after::after,
+            .twitter-after::after,
+            .discord-after::after,
+            .code-after::after,
+            .flag-after::after {
+                display: none;
+            }
+        }
+
+        @media(max-width: 600px) {
+            .cross-adj {
+                top: 0px;
+                left: 88%;
+            }
+
+            .heart-after::after,
+            .link-after::after,
+            .reddit-after::after,
+            .twitter-after::after,
+            .discord-after::after,
+            .code-after::after,
+            .flag-after::after {
+                display: none;
+            }
+
+            .pink-btn {
+                padding: 3px 8px 3px 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-body modal-content p-0 border-r">
+                <!-- gif banner start -->
+                <section>
+                    <div class="text-white">
+                        <div class="border-r h-adj w-100 center-space position-relative">
+                            <div class="p-4">
+                                <!-- for desktop -->
+                                <div class="d-none d-lg-block">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex">
+                                            <img src="assets/image/random__logo-1.png" class="w-auto me-2" alt="">
+                                            <h4>madisonmoores</h4>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <p class="me-2 my-auto fw-700 fs-20 position-relative follow-after">
+                                                Follow
+                                            </p>
+                                            <p class="me-2 my-auto" style="font-size: 12px;"><i
+                                                    class="fa-solid fa-caret-right me-1 text-dark-pink"></i> 14 K
+                                            </p>
+                                            <p class="me-2 my-auto" style="font-size: 12px;"><i
+                                                    class="fa-solid fa-clock me-1 text-dark-pink"></i> May 15, 2022
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- for mobile -->
+                                <div class="d-block d-lg-none">
+                                    <div class="d-flex">
+                                        <img src="assets/image/random__logo-1.png" class="w-auto me-2" alt="">
+                                        <h5>madisonmoores</h5>
+                                    </div>
+                                    <div>
+                                        <p class="mb-3 my-auto fw-700 fs-20 position-relative follow-after">
+                                            Follow
+                                        </p>
+                                        <p class="mb-1 my-auto" style="font-size: 12px;"><i
+                                                class="fa-solid fa-caret-right me-1 text-dark-pink"></i> 14 K
+                                        </p>
+                                        <p class="mb-1 my-auto" style="font-size: 12px;"><i
+                                                class="fa-solid fa-clock me-1 text-dark-pink"></i> May 15, 2022
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+
+                                <div>
+                                    <div class="black-shaded pt-2 pb-2">
+                                        <div class="d-flex justify-content-end">
+                                            <a href="" class="text-white me-3"><i class="fa-solid fa-gear"></i></a>
+                                            <a href="" class="text-white me-3"><i class="fa-solid fa-expand"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 pt-0 mt-2">
+                                    <!-- for desktop -->
+                                    <div class="d-flex d-none d-lg-block">
+                                        <button class="pink-btn me-2">tag</button>
+                                        <button class="pink-btn me-2">tag</button>
+                                        <button class="pink-btn me-2">tag</button>
+                                        <button class="pink-btn me-2">tag</button>
+                                        <button class="pink-btn me-2">tag</button>
+                                        <button class="pink-btn me-2">tag</button>
+                                    </div>
+
+                                    <!-- for mobile -->
+                                    <div class="d-flex d-block d-lg-none">
+                                        <button class="pink-btn me-2">tag</button>
+                                        <button class="pink-btn me-2">tag</button>
+                                        <button class="pink-btn me-2">tag</button>
+                                        <button class="pink-btn me-2">tag</button>
+                                        <button class="pink-btn me-2">tag</button>
+                                        <button class="pink-btn me-2">tag</button>
+                                    </div>
+
+                                    <!-- for desktop -->
+                                    <div class="d-none d-lg-block">
+                                        <div class="d-flex justify-content-between mt-4">
+                                            <div class="d-flex">
+                                                <a href="" class="text-white me-3"><i
+                                                        class="fa-sharp fa-regular fa-heart fa-2xl position-relative heart-after"></i></a>
+                                                <a href="" class="text-white me-3"><i
+                                                        class="fa-solid fa-link fa-2xl position-relative link-after"></i></a>
+                                            </div>
+                                            <small>Share:</small>
+                                            <div class="d-flex">
+                                                <a href="" class="text-white me-3"><i
+                                                        class="fa-brands fa-reddit-alien fa-2xl position-relative reddit-after"></i></a>
+                                                <a href="" class="text-white me-3"><i
+                                                        class="fa-brands fa-twitter fa-2xl position-relative twitter-after"></i></a>
+                                                <a href="" class="text-white me-3"><i
+                                                        class="fa-brands fa-discord fa-2xl position-relative discord-after"></i></a>
+                                                <a href="" class="text-white me-3"><i
+                                                        class="fa-solid fa-code fa-2xl position-relative code-after"></i></a>
+                                                <a href="" class="text-white me-3"><i
+                                                        class="fa-regular fa-flag fa-2xl position-relative flag-after"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- for mobile -->
+                                    <div class="d-flex justify-content-between mt-4 d-block d-lg-none">
+                                        <div class="d-flex">
+                                            <a href="" class="text-white me-3"><i
+                                                    class="fa-sharp fa-regular fa-heart position-relative heart-after"></i></a>
+                                            <a href="" class="text-white me-3"><i
+                                                    class="fa-solid fa-link position-relative link-after"></i></a>
+                                        </div>
+
+                                        <div class="d-flex">
+                                            <a href="" class="text-white me-3"><i
+                                                    class="fa-brands fa-reddit-alien position-relative reddit-after"></i></a>
+                                            <a href="" class="text-white me-3"><i
+                                                    class="fa-brands fa-twitter position-relative twitter-after"></i></a>
+                                            <a href="" class="text-white me-3"><i
+                                                    class="fa-brands fa-discord position-relative discord-after"></i></a>
+                                            <a href="" class="text-white me-3"><i
+                                                    class="fa-solid fa-code position-relative code-after"></i></a>
+                                            <a href="" class="text-white me-3"><i
+                                                    class="fa-regular fa-flag position-relative flag-after"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="position-absolute cross-adj">
+                                <button type="button" class="btn text-white" data-bs-dismiss="modal"
+                                    aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                            </div>
+                        </div>
+                </section>
+                <!-- gif banner end -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
